@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Students(models.Model):
+class Student(models.Model):
     student_number = models.PositiveIntegerField()
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
@@ -11,4 +11,4 @@ class Students(models.Model):
 
 
     def __str_ (self):
-        return f'Students:{self.first_name}{self.last_name}'
+        return f'Student:{self.first_name}{self.last_name}'
